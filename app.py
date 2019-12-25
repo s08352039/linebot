@@ -16,12 +16,8 @@ from linebot.models import *
 
 app = Flask(__name__)
 
-ACCESS_TOKEN= os.environ['BfP15oaT3S8LuggdpufZJirEJgppQSrV0UQKODU+WdvbC/0Po6rUZXhnI/h9p1PV0FW7DfRf/+bU+T9N5+DjAgnQz1CAKbLlMtn52hJRoOgtx+M/GGaB2rqK8UnK69oVgU1ULc++FL3tyGduulPotAdB04t89/1O/w1cDnyilFU='
-]
-SECRET= os.environ[
-'af1b2c1eea841be7e45574295ae8f266'
-
-]
+ACCESS_TOKEN= os.environ['ACCESS_TOKEN']
+SECRET= os.environ['CHANNEL_SECRET']
 
 # Channel Access Token
 line_bot_api = LineBotApi(ACCESS_TOKEN)
@@ -103,14 +99,14 @@ def find_bookls(kw):
     return ans
 
 def loadPMJson():
-    with urllib.request.urlopen("http://opendata2.epa.gov.tw/AQI.json") as url:
+    with urllib.request.urlopen("http://opendata2.epa.gov.tw/AQX.json") as url:
         data = json.loads(url.read().decode())
         for ele in data:
             pm_site[ele['SiteName']] = ele['PM2.5']
 
 def getCls(cls_prefix):
     ret_cls = []
-    urlstr = 'https://course.thu.edu.tw/search-result/108/1/'
+    urlstr = 'https://course.thu.edu.tw/search-result/107/1/'
     postfix = '/all/all'
     
     qry_cls = urlstr + cls_prefix + postfix
