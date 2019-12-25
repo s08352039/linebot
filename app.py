@@ -16,10 +16,10 @@ from linebot.models import *
 
 app = Flask(__name__)
 
-ACCESS_TOKEN= os.environ[BfP15oaT3S8LuggdpufZJirEJgppQSrV0UQKODU+WdvbC/0Po6rUZXhnI/h9p1PV0FW7DfRf/+bU+T9N5+DjAgnQz1CAKbLlMtn52hJRoOgtx+M/GGaB2rqK8UnK69oVgU1ULc++FL3tyGduulPotAdB04t89/1O/w1cDnyilFU=
+ACCESS_TOKEN= os.environ['BfP15oaT3S8LuggdpufZJirEJgppQSrV0UQKODU+WdvbC/0Po6rUZXhnI/h9p1PV0FW7DfRf/+bU+T9N5+DjAgnQz1CAKbLlMtn52hJRoOgtx+M/GGaB2rqK8UnK69oVgU1ULc++FL3tyGduulPotAdB04t89/1O/w1cDnyilFU='
 ]
 SECRET= os.environ[
-af1b2c1eea841be7e45574295ae8f266
+'af1b2c1eea841be7e45574295ae8f266'
 
 ]
 
