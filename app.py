@@ -80,7 +80,7 @@ def handle_message(event):
                 line_bot_api.reply_message(event.reply_token, _message)
                 break;
     elif '!h' in _token[0] or '!help' in _token[0]:
-        _message = TextSendMessage(text="請輸入:課程, 誠品, 空氣 + <關鍵字>")
+        _message = TextSendMessage(text="123")
         line_bot_api.reply_message(event.reply_token, _message)
 	
 def find_bookls(kw):
